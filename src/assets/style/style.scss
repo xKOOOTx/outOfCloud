@@ -1,0 +1,21 @@
+@import '_variables';
+@import '_fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .landing {
+  height: 100%;
+}
+body, .landing {
+  display: flex;
+  flex-direction: column;
+  font-family: RotondaC;
+}
+
+li {
+  list-style: none;
+}
