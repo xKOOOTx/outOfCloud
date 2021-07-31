@@ -158,4 +158,13 @@ export default {
       display: flex;
     }
   }
+
+@media (max-width: 350px) {
+  .popup {
+    &__form {
+      margin: 10px;
+      text-align: center;
+    }
+  }
+}
 </style>
