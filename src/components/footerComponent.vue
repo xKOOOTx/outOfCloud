@@ -10,6 +10,11 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import '../assets/style/style';
+.footer {
+  padding: 50px;
+  background: $purple;
+  text-align: center;
+}
 </style>

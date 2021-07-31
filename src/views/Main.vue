@@ -20,6 +20,7 @@ export default {
 <style scoped lang="scss">
 @import '../assets/style/style';
 .main {
+  padding: 50px 0;
   background: $grey;
 }
 

@@ -45,6 +45,8 @@ export default {
 
 .shopping {
   background: $white;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
   &__wrapper {
     padding: 0 283px;
   }
