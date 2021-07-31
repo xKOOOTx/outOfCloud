@@ -78,4 +78,27 @@ export default {
     }
   }
 }
+
+@media (max-width: 350px) {
+  .freeDelivery {
+    display: block;
+    height: 250px;
+    text-align: center;
+    &__imgWrapper {
+      margin: 0 auto;
+    }
+    &__description {
+      max-width: 300px;
+      margin-left: 0;
+      text-align: center;
+      &_header {
+        display: block;
+        text-align: center;
+        &_span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 </style>

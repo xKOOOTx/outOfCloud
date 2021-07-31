@@ -77,4 +77,23 @@ export default {
     }
   }
 }
+
+@media (max-width: 450px) {
+  .discount {
+    display: block;
+    text-align: center;
+    &__imgWrapper {
+      margin: 0 auto;
+    }
+    &__description {
+      max-width: 300px;
+      &_header {
+        flex-direction: row;
+        &_span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
 </style>

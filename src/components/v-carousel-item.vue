@@ -74,4 +74,11 @@ export default {
   }
 }
 
+@media (max-width: 350px) {
+  .v-carousel-item {
+    &__img {
+      width: 250px;
+    }
+  }
+}
 </style>

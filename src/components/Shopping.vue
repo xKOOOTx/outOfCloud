@@ -48,7 +48,8 @@ export default {
   margin-bottom: 100px;
   padding-bottom: 100px;
   &__wrapper {
-    padding: 0 283px;
+    max-width: 915px;
+    margin: 0 auto;
   }
   &__cardBlock {
     display: flex;
@@ -70,4 +71,11 @@ export default {
   }
 }
 
+@media (max-width: 450px) {
+  .shopping {
+    &__cardBlock {
+      flex-direction: column;
+    }
+  }
+}
 </style>

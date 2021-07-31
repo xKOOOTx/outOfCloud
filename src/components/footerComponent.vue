@@ -17,4 +17,5 @@ export default {
   background: $purple;
   text-align: center;
 }
+
 </style>

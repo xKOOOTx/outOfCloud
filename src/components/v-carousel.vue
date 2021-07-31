@@ -74,7 +74,8 @@ export default {
 @import '../assets/style/style';
 .wrapper {
   position: relative;
-
+  max-width: 915px;
+  margin: 0 auto;
 }
 .carousel {
   &__wrapper {
@@ -93,7 +94,6 @@ export default {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 400px;
     &_btn {
       cursor: pointer;
       transition: all .2s ease-in-out;
@@ -109,5 +109,9 @@ export default {
   display: flex;
 
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 450px) {
+
 }
 </style>
