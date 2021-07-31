@@ -74,8 +74,8 @@ export default {
             form.reset();
             thanks.classList.remove('popup__thanks-active');
             form.classList.remove('popup__form-sended');
-          }, 1000);
-        }, 3000);
+          }, 3000);
+        }, 5000);
       } else {
         //  eslint-disable-next-line
         this.errors++;
