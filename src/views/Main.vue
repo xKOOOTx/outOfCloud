@@ -1,19 +1,18 @@
 <template>
   <main class="main">
-    <h1 class="main__header">
-      Main component
-    </h1>
     <Slider />
+    <Shopping />
   </main>
 </template>
 
 <script>
 
 import Slider from '../components/Slider.vue';
+import Shopping from '../components/Shopping.vue';
 
 export default {
   name: 'Main',
-  components: { Slider },
+  components: { Slider, Shopping },
 
 };
 </script>

@@ -1,5 +1,7 @@
 <template>
-  <Landing />
+  <div id="app">
+    <Landing />
+  </div>
 </template>
 
 <script>
@@ -18,4 +20,7 @@ export default {
 @import './assets/style/style';
 @import './assets/style/_variables';
 @import './assets/style/_fonts';
+
+#app {
+}
 </style>

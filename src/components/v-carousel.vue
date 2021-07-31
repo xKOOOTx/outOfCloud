@@ -12,14 +12,14 @@
       </div>
       <div class="carousel__buttons">
         <svg
-          @click="prevSlide"
+          @click="prevSlide" class="carousel__buttons_btn"
           width="24" height="44" viewBox="0 0 24 44" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M22 2L2 22L22 42" stroke="#D0D5CD" stroke-width="3" stroke-linecap="round"
                 stroke-linejoin="round"/>
         </svg>
         <svg
-          @click="nextSlide"
+          @click="nextSlide" class="carousel__buttons_btn"
           width="24" height="44" viewBox="0 0 24 44" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M2 2L22 22L2 42" stroke="#D0D5CD" stroke-width="3" stroke-linecap="round"
@@ -74,25 +74,40 @@ export default {
 @import '../assets/style/style';
 .wrapper {
   position: relative;
+
 }
-.carousel__wrapper {
-  max-width: 640px;
-  margin: 30px auto;
-  border-radius: 10px;
-  overflow: hidden;
-  background: $white;
-}
-.carousel__buttons {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 400px;
+.carousel {
+  &__wrapper {
+    max-width: 640px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $white;
+    box-shadow: 0 0 40px 0 #0000001A;
+
+  }
+  &__buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 400px;
+    &_btn {
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      &:hover {
+        & path {
+          stroke: $black;
+        }
+      }
+    }
+  }
 }
 .v-carousel {
   display: flex;
+
   transition: all .3s ease-in-out;
 }
 </style>

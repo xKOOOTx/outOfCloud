@@ -19,3 +19,14 @@ body, .landing {
 li {
   list-style: none;
 }
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input {
+  outline: none;
+  font-family: RotondaC;
+  font-size: 18px;
+}
